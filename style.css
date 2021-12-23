@@ -1,12 +1,75 @@
 * {
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /* Add styles here! */
+
+/** define css variables*/
+:root {
+    --hb-green: hsl(160deg, 100%, 30%);
+    --hb--gold-lighter: hsl(45deg, 100%, 50%);
+    --hb--gold-darker: hsl(45deg, 100%, 40%);
+    --hb--black: hsl(0deg, 0%, 0%);
+    --hb--gray-very-dark: hsl(0deg, 0%, 10%);
+    --hb--gray-dark: hsl(0deg, 0%, 30%);
+    --hb--gray-medium: hsl(0deg, 0%, 40%);
+    --hb--gray-light: hsl(0deg, 0%, 60%);
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+.max-width-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.intro-chunk p {
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+.intro-chunk strong {
+    color: var(--hb-green)
+}
+
+header .intro-chunk {
+    padding: 96px 0 48px;
+    max-width: 400px;
+}
+
+main {
+    background-color: var(--hb--gray-light);
+    padding: 96px 0;
+}
+
+.card {
+    padding: 24px;
+    margin: -24px;
+    background-color: hsl(0deg, 0%, 100%);
+    border-bottom: 8px var(--hb--gray-dark) solid;
+}
+
+.indented-heading {
+    margin-left: -32px;
+    margin-top: -16px;
+    padding: 16px 32px;
+    width: fit-content;
+    background-color: var(--hb--gold-lighter);
+    border: 8px var(--hb--gold-darker) soild;
+}
